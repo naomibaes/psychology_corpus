@@ -2,7 +2,7 @@
 
 ## Title: Academic psychology corpus (1930-2019)
 
-**Description:* This repository contains the psychology corpus, which contains 871,340 abstracts from 875 psychology journals, with a total of 144,366,128 words ranging from 1930 to 2019, sourced from E-Research and PubMed databases (Vylomova et al., 2019). The journals are relatively evenly distributed across subdisciplines of psychology, including journals from overlapping Scimago journal classifications: developmental and educational psychology (24.7%), clinical psychology (19.5%), social psychology (18.1%), psychology (miscellaneous) (17.8%), applied psychology (16.5%), experimental and cognitive psychology (11.3%), and neuropsychology and physiological psychology (5.1%). 
+**Description:** This repository contains the psychology corpus, which contains 871,340 abstracts from 875 psychology journals, with a total of 144,366,128 words ranging from 1930 to 2019, sourced from E-Research and PubMed databases (Vylomova et al., 2019). The journals are relatively evenly distributed across subdisciplines of psychology, including journals from overlapping Scimago journal classifications: developmental and educational psychology (24.7%), clinical psychology (19.5%), social psychology (18.1%), psychology (miscellaneous) (17.8%), applied psychology (16.5%), experimental and cognitive psychology (11.3%), and neuropsychology and physiological psychology (5.1%). 
 
 ## Data Collection Methodology
 * See Vylomova, E., Murphy, S., & Haslam, N. (2019, August). Evaluation of semantic change of harm-related concepts in psychology. In Proceedings of the 1st international workshop on computational approaches to historical language change (pp. 29-34). https://aclanthology.org/W19-4704/
@@ -19,22 +19,21 @@
     
 ## Data Volume 
 - *Note*: Information is for "/data/projects/punim0322/Processed/abstract_year_journal.csv"
-- Size: 951 MB (998,130,585 bytes)
+- **Size:** 951 MB (998,130,585 bytes)
 
-- Year range: 1930-2019
-- Abstracts: 871,340
+- **Year range:** 1930-2019
+- **Abstracts:** 871,340
   - (cat abstract_year_journal.csv | grep -P '\\|\\| (19[7-9][0-9]|200[0-9]|201[0-7]) ' | wc -l gives 825628)
-- Journals: 875 psychology journals
-
-- Tokens (1970-2019): 142157449
-- Lines (1970-2019): 859704
+- **Journals:** 875 psychology journals
+- **Tokens (1970-2019):** 142157449
+- **Lines (1970-2019):** 859704
  
-**Note:** For more information, download the "corpus_statistics.xlsx" file which contains descriptives for processed versions of the corpus and counts for psychology journals. You can email me (naomi_baes@hotmail.com) if you are after processed versions of the corpus in the excel spreadsheet (e.g., dependency parsed or lemmatized versions). The processed files are too large to drop into this repository.
+*Note:* For more information, download the "corpus_statistics.xlsx" file which contains descriptives for processed versions of the corpus and counts for psychology journals. You can email me (naomi_baes@hotmail.com) if you are after processed versions of the corpus in the excel spreadsheet (e.g., dependency parsed or lemmatized versions). The processed files are too large to drop into this repository.
 - scp baesn@spartan.hpc.unimelb.edu.au:/data/projects/punim0322/Processed/abstract_year_journal.csv "C:\Users\naomi\OneDrive\Desktop"   
 
 ## Usage and Licensing
 
-- **Permissions**: You are permitted to download and use this corpus of article abstracts.
+- **Permissions**: You are permitted to download and use this corpus of article abstracts. The use of abstracts circumvent paywall and copyright issues.
 
 ## Data Quality and Limitations
 
@@ -52,7 +51,7 @@ This data statement provides a comprehensive overview of the New York Times Arti
 ![image](https://github.com/user-attachments/assets/57031fad-082f-4040-9187-80255a3b17d6)
 
 ### Methodology:
-- Data was collected from #-Research and PubMed databases.
+- Data was collected from E-Research and PubMed databases.
 
 ### Usage:
 - **Research and Analysis**: This corpus can be used for text analysis, trend identification, and other research purposes.
@@ -66,7 +65,7 @@ This data statement provides a comprehensive overview of the New York Times Arti
 - No major ethical considerations come to mind.
 
 ### Acknowledgements: 
-- Sean Murphy, an ex-postdoc in Nick Haslam's concept creep lab constructed the corpus with help from the team at the University of Melbourne's Research Computing Services.
+- Sean Murphy, an alumni postdoc in Nick Haslam's concept creep lab constructed the corpus with help from the team at the University of Melbourne's Research Computing Services.
   
 ### Contact Information:
 - **Email**: [naomi_baes@hotmail.com](mailto:naomi_baes@hotmail.com). You can contact with questions.
