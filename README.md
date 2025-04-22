@@ -1,20 +1,78 @@
-# Academic psychology corpus (1930-2019)
+# Information Sheet
 
-The psychology corpus contains 871,340 abstracts from 875 psychology journals, with a total of 144,366,128 words ranging from 1930 to 2019, sourced from E-Research and PubMed databases (Vylomova et al., 2019). The journals are relatively evenly distributed across subdisciplines of psychology, including journals from overlapping Scimago journal classifications: developmental and educational psychology (24.7%), clinical psychology (19.5%), social psychology (18.1%), psychology (miscellaneous) (17.8%), applied psychology (16.5%), experimental and cognitive psychology (11.3%), and neuropsychology and physiological psychology (5.1%). 
+## Title: Academic psychology corpus (1930-2019)
 
-The format of the corpus is: "text ||||| year ||||| publication_type ||||| id". Example:
-- those taking a high or low position in the consensus ratings. The judges showed higher variability in rating their own sex than when rating the opposite sex. ||||| 1933 ||||| The Journal of Social Psychology ||||| Journal of Social Psychology
+**Description:* This repository contains the psychology corpus, which contains 871,340 abstracts from 875 psychology journals, with a total of 144,366,128 words ranging from 1930 to 2019, sourced from E-Research and PubMed databases (Vylomova et al., 2019). The journals are relatively evenly distributed across subdisciplines of psychology, including journals from overlapping Scimago journal classifications: developmental and educational psychology (24.7%), clinical psychology (19.5%), social psychology (18.1%), psychology (miscellaneous) (17.8%), applied psychology (16.5%), experimental and cognitive psychology (11.3%), and neuropsychology and physiological psychology (5.1%). 
 
-## Descriptives (no processing)
+## Data Collection Methodology
+* See Vylomova, E., Murphy, S., & Haslam, N. (2019, August). Evaluation of semantic change of harm-related concepts in psychology. In Proceedings of the 1st international workshop on computational approaches to historical language change (pp. 29-34). https://aclanthology.org/W19-4704/
 
-"/data/projects/punim0322/Processed/abstract_year_journal.csv"
+## Data Structure
+- **Format:** csv (but it is actually separated by a unique delimiter: IIIII and should be read in as such)
+- **Columns:** `[text ||||| year ||||| new_journal ||||| old_journal]`
+  - Example: `...those taking a high or low position in the consensus ratings. The judges showed higher variability in rating their own sex than when rating the opposite sex. ||||| 1933 ||||| The Journal of Social Psychology ||||| Journal of Social Psychology`
+- **Schema**:
+  - `text`: article abstracts
+  - `year`: year of publication
+  - `new_journal`: new normalized journal name
+  - `old_journal`: origial journal name
+    
+## Data Volume 
+- *Note*: Information is for "/data/projects/punim0322/Processed/abstract_year_journal.csv"
 - Size: 951 MB (998,130,585 bytes)
+
+- Year range: 1930-2019
+- Abstracts: 871,340
+  - (cat abstract_year_journal.csv | grep -P '\\|\\| (19[7-9][0-9]|200[0-9]|201[0-7]) ' | wc -l gives 825628)
+- Journals: 875 psychology journals
+
 - Tokens (1970-2019): 142157449
 - Lines (1970-2019): 859704
-- Abstracts: 825628      (cat abstract_year_journal.csv | grep -P '\\|\\| (19[7-9][0-9]|200[0-9]|201[0-7]) ' | wc -l)
-
+ 
 **Note:** For more information, download the "corpus_statistics.xlsx" file which contains descriptives for processed versions of the corpus and counts for psychology journals. You can email me (naomi_baes@hotmail.com) if you are after processed versions of the corpus in the excel spreadsheet (e.g., dependency parsed or lemmatized versions). The processed files are too large to drop into this repository.
 - scp baesn@spartan.hpc.unimelb.edu.au:/data/projects/punim0322/Processed/abstract_year_journal.csv "C:\Users\naomi\OneDrive\Desktop"   
+
+## Usage and Licensing
+
+- **Permissions**: You are permitted to download and use this corpus of article abstracts.
+
+## Data Quality and Limitations
+
+- **Quality Control**: Articles have been cleaned to remove duplicates and incomplete entries.
+- **Known Limitations**: As full-text articles are not available, tokens are limited, affecting the comprehensiveness of the dataset. However, abstracts also provide a sort of standardized summary (without length bias) of the full-text article.
+
+# Data Statement
+
+### Purpose:
+This data statement provides a comprehensive overview of the New York Times Article Corpus, which has been compiled for research and analysis purposes. The corpus aims to facilitate studies in various fields, including but not limited to, journalism, data science, natural language processing, and historical research.
+
+### Scope:
+- **Content**: Abstracts from scientific articles from 1930 to 2019 for each year.
+
+![image](https://github.com/user-attachments/assets/57031fad-082f-4040-9187-80255a3b17d6)
+
+### Methodology:
+- Data was collected from #-Research and PubMed databases.
+
+### Usage:
+- **Research and Analysis**: This corpus can be used for text analysis, trend identification, and other research purposes.
+- **Development**: Can be utilized in developing machine learning models and natural language processing applications.
+
+### Quality and Limitations:
+- **Quality Control**:
+  - The dataset has undergone cleaning to remove duplicates and some non-English journals.
+
+### Ethical Considerations:
+- No major ethical considerations come to mind.
+
+### Acknowledgements: 
+- Sean Murphy, an ex-postdoc in Nick Haslam's concept creep lab constructed the corpus with help from the team at the University of Melbourne's Research Computing Services.
+  
+### Contact Information:
+- **Email**: [naomi_baes@hotmail.com](mailto:naomi_baes@hotmail.com). You can contact with questions.
+
+### Citation:
+Please cite the first paper introducing this corpus as follows:  `Vylomova, E., Murphy, S., & Haslam, N. (2019, August). Evaluation of semantic change of harm-related concepts in psychology. In Proceedings of the 1st international workshop on computational approaches to historical language change (pp. 29-34). https://aclanthology.org/W19-4704/`
 
 # Applications of the Corpus
 
