@@ -1,8 +1,20 @@
 # Academic psychology corpus (1930-2019)
 
-The format of the corpus is: "text ||||| year ||||| publication_type ||||| id".
+The psychology corpus contains 871,340 abstracts from 875 psychology journals, with a total of 144,366,128 words ranging from 1930 to 2019, sourced from E-Research and PubMed databases (Vylomova et al., 2019). The journals are relatively evenly distributed across subdisciplines of psychology, including journals from overlapping Scimago journal classifications: developmental and educational psychology (24.7%), clinical psychology (19.5%), social psychology (18.1%), psychology (miscellaneous) (17.8%), applied psychology (16.5%), experimental and cognitive psychology (11.3%), and neuropsychology and physiological psychology (5.1%). 
 
-## Applications
+The format of the corpus is: "text ||||| year ||||| publication_type ||||| id". Example:
+- those taking a high or low position in the consensus ratings. The judges showed higher variability in rating their own sex than when rating the opposite sex. ||||| 1933 ||||| The Journal of Social Psychology ||||| Journal of Social Psychology
+
+## Descriptives (no processing)
+
+/data/projects/punim0322/Processed/abstract_year_journal.csv
+Tokens (1970-2019): 142157449
+Lines (1970-2019): 859704
+Abstracts: 825628      cat abstract_year_journal.csv | grep -P '\\|\\| (19[7-9][0-9]|200[0-9]|201[0-7]) ' | wc -l
+
+Note: For more information, download the "corpus_statistics.xlsx" file which contains descriptives for processed versions of the corpus and counts for psychology journals. You can email me if you are after processed versions of the corpus in the excel spreadsheet (e.g., dependency parsed or lemmatized versions) to save you time.
+
+# Applications of the Corpus
 
 The corpus has been used in the following papers:
 
