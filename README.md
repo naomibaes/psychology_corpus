@@ -16,7 +16,7 @@ The corpus has been used in the following papers:
 
 [5] Wheeler, M.A., Vylomova, E., McGrath, M.J. et al. More confident, less formal: stylistic changes in academic psychology writing from 1970 to 2016. Scientometrics 126, 9603–9612 (2021). https://doi.org/10.1007/s11192-021-04166-9
 
-[6] Haslam N, Vylomova E, Murphy SC, Wilson SJ. The Neuroscientification of Psychology: The Rising Prevalence of Neuroscientific Concepts in Psychology From 1965 to 2016. Perspect Psychol Sci. 2022 Mar;17(2):519-529. doi: 10.1177/1745691621991864. Epub 2021 Jul 20. PMID: 34283670.
+[6] Haslam N, Vylomova E, Murphy SC, Wilson SJ. The Neuroscientification of Psychology: The Rising Prevalence of Neuroscientific Concepts in Psychology From 1965 to 2016. Perspect Psychol Sci. 2022 Mar;17(2):519-529. [doi: 10.1177/1745691621991864. Epub 2021 Jul 20. PMID: 34283670.](https://journals.sagepub.com/doi/10.1177/1745691621991864)
 
 [7] Baes, N., Vylomova, E., Zyphur, M., & Haslam, N. (2023). The semantic inflation of “trauma” in psychology. Psychology of Language and Communication, 27(1), 23-45. https://doi.org/10.58734/plc-2023-0002
 
