@@ -12,7 +12,7 @@ The format of the corpus is: "text ||||| year ||||| publication_type ||||| id". 
 - Lines (1970-2019): 859704
 - Abstracts: 825628      (cat abstract_year_journal.csv | grep -P '\\|\\| (19[7-9][0-9]|200[0-9]|201[0-7]) ' | wc -l)
 
-**Note:** For more information, download the "corpus_statistics.xlsx" file which contains descriptives for processed versions of the corpus and counts for psychology journals. You can email me (naomi_baes@hotmail.com) if you are after processed versions of the corpus in the excel spreadsheet (e.g., dependency parsed or lemmatized versions) to save you time.
+**Note:** For more information, download the "corpus_statistics.xlsx" file which contains descriptives for processed versions of the corpus and counts for psychology journals. You can email me (naomi_baes@hotmail.com) if you are after processed versions of the corpus in the excel spreadsheet (e.g., dependency parsed or lemmatized versions).
 
 # Applications of the Corpus
 
