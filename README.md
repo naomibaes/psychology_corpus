@@ -8,6 +8,7 @@ The format of the corpus is: "text ||||| year ||||| publication_type ||||| id". 
 ## Descriptives (no processing)
 
 "/data/projects/punim0322/Processed/abstract_year_journal.csv"
+- Size: 951 MB (998,130,585 bytes)
 - Tokens (1970-2019): 142157449
 - Lines (1970-2019): 859704
 - Abstracts: 825628      (cat abstract_year_journal.csv | grep -P '\\|\\| (19[7-9][0-9]|200[0-9]|201[0-7]) ' | wc -l)
